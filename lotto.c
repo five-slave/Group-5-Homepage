@@ -64,8 +64,8 @@ void comp_answer_user()
 void price_count()
 {
 	int count = 0;
-	int c[6] = 0;
-	int d[6] = 0;
+	int a[6] = 0;
+	int b[6] = 0;
 
 	for(int i = 0;i<=5;i++)
 	{
@@ -78,4 +78,19 @@ void price_count()
 			}
 		}
 	}
+	
+	if(count == 0)
+		printf("x , nothing");
+	else if(count == 1)
+		printf("6th , nothing\n");
+	else if(count == 2)
+		printf("5th , 5,000w\n");
+	else if(count == 3)
+		printf("4th , 1,000,000w\n");
+	else if(count == 4)
+		printf("3rd , 2,500,000w\n");
+	else if(count == 5)
+		printf("2nd , 5,000,000w\n");
+	else if(count == 6)
+		printf("1st , 10,000,000w\n");
 }
