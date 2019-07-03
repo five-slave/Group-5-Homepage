@@ -61,3 +61,36 @@ void comp_answer_user()
 	printf("Good Job!!!!!\n");
 }
 
+void price_count()
+{
+	int count = 0;
+	int a[6] = 0;
+	int b[6] = 0;
+
+	for(int i = 0;i<=5;i++)
+	{
+		for(int j = 0;j<=5;j++)
+		{
+			if(b[i] == a[j])
+			{
+				count++;
+				break;
+			}
+		}
+	}
+	
+	if(count == 0)
+		printf("x , nothing");
+	else if(count == 1)
+		printf("6th , nothing\n");
+	else if(count == 2)
+		printf("5th , 5,000\n");
+	else if(count == 3)
+		printf("4th , 1,000,000\n");
+	else if(count == 4)
+		printf("3rd , 2,500,000\n");
+	else if(count == 5)
+		printf("2nd , 5,000,000\n");
+	else if(count == 6)
+		printf("1st , 10,000,000\n");
+}
