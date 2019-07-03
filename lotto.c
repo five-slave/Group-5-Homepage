@@ -1,6 +1,35 @@
 #include <stdio.h>
 #define LOTTO_NUMBER 6
 
+#include <time.h>
+
+
+// Write winning number & Date(y-m-d) to "log.txt"
+int save_log(int *num){
+
+    time_t t = time(NULL);
+    struct tm tm = *localtime(&t);
+	FILE *fp = fopen("log.txt","a");
+	int i;
+
+	if(fp==NULL){
+
+		perror("failed create file log.txt ");
+		return 0;
+	}
+
+	fprintf(fp,"%d-%d-%d : ", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday);
+
+	for(i=0;i<LOTTO_NUMBER;i++){
+		fprintf(fp,"%d ",num[i]);
+	}
+	fprintf(fp,"\n======================\n");
+
+	fclose(fp);
+
+	return 1;
+}
+
 void comp_answer_user()
 {
 	int user_lotto[LOTTO_NUMBER];
@@ -31,4 +60,4 @@ void comp_answer_user()
 	}
 	printf("Good Job!!!!!\n");
 }
-	
+
