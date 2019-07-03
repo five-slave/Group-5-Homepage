@@ -8,6 +8,7 @@ int save_log(int *num){
     time_t t = time(NULL);
     struct tm tm = *localtime(&t);
 	FILE *fp = fopen("log.txt","a");
+	int i;
 
 	if(fp==NULL){
 
