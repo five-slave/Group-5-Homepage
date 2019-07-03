@@ -64,8 +64,8 @@ void comp_answer_user()
 void price_count()
 {
 	int count = 0;
-	int a[6] = 0;
-	int b[6] = 0;
+	//int a[6] = 0;
+	//int b[6] = 0;
 
 	for(int i = 0;i<=5;i++)
 	{
