@@ -15,6 +15,11 @@ int save_log(int *num){
 
 	fprintf(fp,"%d-%d-%d : ", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday);
 
+	for(i=0;i<6;i++){
+		fprintf(fp,"%d ",num[i]);
+	}
+	fprintf(fp,"\n======================\n");
+
 	fclose(fp);
 
 	return 1;
