@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <time.h>
 
+
+// Write winning number & Date(y-m-d) to "log.txt"
 int save_log(int *num){
 
     time_t t = time(NULL);
