@@ -24,8 +24,10 @@ void main()
 		case 4 :
 			printf("you are 3, and prize money is two million won\n");
 		case 3 : 
-
-
+			printf("you are 4, and prize money is five thousand won\n");
+		
+		default : 
+			printf("sorry,,,,\n");
 	}
 
 }
