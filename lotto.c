@@ -6,7 +6,7 @@ void main()
 	int user_lotto[LOTTO_NUMBER];
 	int answer_lotto[LOTTO_NUMBER];
 	int count = 0;
-	for(int i = 0; i < LOTTO_NUMBER; i++)
+	for(int i = 0; i < LOTTO_NUMBER; i++) //compare answer and user lotto number
 	{
 		for(int j  = 0; j < LOTTO_NUMBER; j++)
 		{
@@ -16,7 +16,7 @@ void main()
 			}
 		}
 	}
-	switch(count){
+	switch(count){ //print rank and prize number 
 		case 6 : 
 			printf("you are 1, and prize money is ten million won\n");	
 		case 5 :
@@ -29,6 +29,6 @@ void main()
 		default : 
 			printf("sorry,,,,\n");
 	}
-
+	printf("Good Job!!!!!\n");
 }
 	
