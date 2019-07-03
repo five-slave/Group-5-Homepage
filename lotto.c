@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define LOTTO_NUMBER 6
 
-void main()
+void comp_answer_user()
 {
 	int user_lotto[LOTTO_NUMBER];
 	int answer_lotto[LOTTO_NUMBER];
