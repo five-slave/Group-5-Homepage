@@ -61,3 +61,21 @@ void comp_answer_user()
 	printf("Good Job!!!!!\n");
 }
 
+void price_count()
+{
+	int count = 0;
+	int c[6] = 0;
+	int d[6] = 0;
+
+	for(int i = 0;i<=5;i++)
+	{
+		for(int j = 0;j<=5;j++)
+		{
+			if(b[i] == a[j])
+			{
+				count++;
+				break;
+			}
+		}
+	}
+}
