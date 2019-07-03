@@ -18,12 +18,13 @@ void main()
 	}
 	switch(count){
 		case 6 : 
-			
+			printf("you are 1, and prize money is ten million won\n");	
 		case 5 :
-
+			printf("you are 2, and prize money is five million won\n");
 		case 4 :
+			printf("you are 3, and prize money is two million won\n");
+		case 3 : 
 
-		default : 
 
 	}
 
