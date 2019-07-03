@@ -84,13 +84,13 @@ void price_count()
 	else if(count == 1)
 		printf("6th , nothing\n");
 	else if(count == 2)
-		printf("5th , 5,000w\n");
+		printf("5th , 5,000\n");
 	else if(count == 3)
-		printf("4th , 1,000,000w\n");
+		printf("4th , 1,000,000\n");
 	else if(count == 4)
-		printf("3rd , 2,500,000w\n");
+		printf("3rd , 2,500,000\n");
 	else if(count == 5)
-		printf("2nd , 5,000,000w\n");
+		printf("2nd , 5,000,000\n");
 	else if(count == 6)
-		printf("1st , 10,000,000w\n");
+		printf("1st , 10,000,000\n");
 }
