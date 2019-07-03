@@ -6,7 +6,7 @@ void main()
 	int user_lotto[LOTTO_NUMBER];
 	int answer_lotto[LOTTO_NUMBER];
 	int count = 0;
-	for(int i = 0; i < LOTTO_NUMBER; i ++)
+	for(int i = 0; i < LOTTO_NUMBER; i++)
 	{
 		for(int j  = 0; j < LOTTO_NUMBER; j++)
 		{
@@ -16,5 +16,16 @@ void main()
 			}
 		}
 	}
+	switch(count){
+		case 6 : 
+			
+		case 5 :
+
+		case 4 :
+
+		default : 
+
+	}
+
 }
 	
