@@ -1,7 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-int main(void)
+#define LOTTO_NUMBER 6
+
+void main()
 {
-	printf("d\n",rand()%45 + 1);
-	return 0;
+	int user_lotto[LOTTO_NUMBER];
+	int answer_lotto[LOTTO_NUMBER];
+	int count = 0;
+	for(int i = 0; i < LOTTO_NUMBER; i ++)
+	{
+		for(int j  = 0; j < LOTTO_NUMBER; j++)
+		{
+			if(user_lotto[j] == answer_lotto[i])
+			{
+				count++;
+			}
+		}
+	}
 }
+	
